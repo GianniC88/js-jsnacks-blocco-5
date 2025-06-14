@@ -15,3 +15,23 @@ for (let i = 0; i < nums.length; i++) {
 }
 
 console.log(numPari);
+
+//ciclo forEACH
+
+const NumeriPari = [];
+
+nums.forEach((element) => {
+  if (element % 2 === 0) {
+    NumeriPari.push(element);
+  }
+});
+
+console.log(NumeriPari);
+
+//ciclo MAP
+
+const NUmeriPAri = nums.map((element, i, arr) => {
+  if (element % 2 === 0) return element;
+});
+
+console.log(numPari);
