@@ -13,19 +13,21 @@ const nomeAutore = posts.map((element, index, arr) => {
 });
 console.log(nomeAutore);
 
-//forEach
+// //forEach
 
 const nomiAutori = [];
 posts.forEach((element, index, arr) => {
-  nomeAutore.push(element.author);
+  nomiAutori.push(element.author);
 });
 console.log(nomiAutori);
 
 //metodo FOR
 
 const nome = [];
-for (let i = 0; 1 < posts.length; i++) {
+for (let i = 0; i < posts.length; i++) {
   const naME = posts[i];
+  console.log(naME);
+
   nome.push(naME.author);
 }
 console.log(nome);
