@@ -32,3 +32,30 @@ console.log(xl);
 console.log(normal);
 
 //ciclo forEACH
+
+const xL = [];
+const noXL = [];
+
+zucchine.forEach((element, i, arr) => {
+  if (element.length < 15) {
+    noXL.push(element);
+  } else xL.push(element);
+});
+console.log(xl);
+console.log(noXL);
+
+//ciclo MAP
+
+const zucchine15 = zucchine.map((element, i, arr) => {
+  if (element.length > 15) {
+    return element;
+  }
+});
+
+const zucchineNO15 = zucchine.map((e, i, arr) => {
+  if (e.length < 15) {
+    return e;
+  }
+});
+console.log(zucchine15);
+console.log(zucchineNO15);
