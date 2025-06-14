@@ -10,7 +10,7 @@ for (let i = 0; i < nums.length; i++) {
   const numP = nums[i];
 
   if (numP % 2 === 0) {
-    numPari.push(num);
+    numPari.push(numP);
   }
 }
 
